@@ -46,7 +46,6 @@
                                 <select id="type" type="text" class="form-control @error('type') is-invalid @enderror" name="type" value="{{ old('type') }}" required autocomplete="type" autofocus>
                                     <option value="customer">customer</option>
                                     <option value="store">store</option>
-                                    <option value="deliver">deliver</option>
                                 </select>
                                 @error('type')
                                     <span class="invalid-feedback" role="alert">
