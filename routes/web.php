@@ -21,6 +21,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/test', 'FestivalController@test')->name('test');
 Route::post('/festival2crop', 'FestivalController@festival2crop')->name('festival2crop');
+Route::post('/agriProductArgPrice', 'FestivalController@agriProductArgPrice')->name('agriProductArgPrice');
 //======================================================================
 
 // // store

@@ -13,7 +13,7 @@
 
                             <div class="col-md-6">
                                     @foreach($data as $d)
-                                        {{$d['CropName']}}
+                                        {{$d['name']}}
                                         <br>
                                     @endforeach
     
