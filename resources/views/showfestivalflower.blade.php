@@ -8,13 +8,13 @@
                 <div class="card-header">Choose Variety</div>
 
                 <div class="card-body">
-                    <form method="POST" action="{{ route('agriProductArgPrice') }}">
+                    <form method="POST" action="{{ route('flowerspecies') }}">
                         @csrf
 
                         <div class="col-md-6">
-                                <select id="Variety" type="text" class="form-control" name="Variety"  required autocomplete="type" autofocus>
-                                @foreach($data as $variety)
-                                    <option>{{$variety['name']}}</option>
+                                <select id="flower" type="text" class="form-control" name="flower"  required autocomplete="type" autofocus>
+                                @foreach($flowers as $flower)
+                                    <option>{{$flower['name']}}</option>
                                 @endforeach
                                 </select>
                         </div>

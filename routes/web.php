@@ -20,8 +20,12 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/test', 'FestivalController@test')->name('test');
-Route::post('/festival2crop', 'FestivalController@festival2crop')->name('festival2crop');
-Route::post('/agriProductArgPrice', 'FestivalController@agriProductArgPrice')->name('agriProductArgPrice');
+Route::get('/hottestFlower', 'FestivalController@hottestFlower')->name('hottestFlower');
+Route::get('/upcomingfestival', 'FestivalController@upcomingfestival')->name('upcomingfestival');
+Route::post('/festival2flower', 'FestivalController@festival2flower')->name('festival2flower');
+Route::post('/flowerspecies', 'FestivalController@flowerspecies')->name('flowerspecies');
+Route::post('/flowerArgPrice', 'FestivalController@flowerArgPrice')->name('flowerArgPrice');
+
 //======================================================================
 
 // // store
