@@ -182,6 +182,15 @@ class FestivalController extends Controller
         return $argPrice;
     }
 
+    public function flowermeaning(Request $request)
+    {
+        $flowers = DB::table('meanings')->where('label', '百合')->get();
+        
+    
+        return view('showflowermeaning', ['flowers' => $flowers]);
+    }
+
+
     public function test()
     {
         return view('test');

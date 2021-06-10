@@ -16,6 +16,7 @@ class CreateMeaningsTable extends Migration
         Schema::create('meanings', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('name');
+            $table->string('label');
             $table->string('description');
             $table->timestamps();
         });
