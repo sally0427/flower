@@ -69,12 +69,13 @@ class FestivalController extends Controller
 
     public function festival2flower(Request $request)
     {
+        return $request;
         $flowers = DB::table('festivals')->where('name', $request->festival)->get('flower');
         $flowers_str_arr = explode('，', $flowers[0]->flower);
         for($i = 0 ; $i < count($flowers_str_arr) ; $i++){
             $flowers_arr[] = array('name' => $flowers_str_arr[$i]);
         }
-        
+        return $flowers_arr;
         return view('showfestivalflower', ['flowers' => $flowers_arr]);
     }
     
@@ -181,7 +182,7 @@ class FestivalController extends Controller
         $argPrice = ($amq / $allquantity);
         return $argPrice;
     }
-
+    // flowermeaning 要改成POST
     public function flowermeaning(Request $request)
     {
         $flowers = DB::table('meanings')->where('label', '百合')->get();
