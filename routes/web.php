@@ -20,7 +20,7 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/test', 'FestivalController@test')->name('test');
-Route::get('/flowermeaning', 'FestivalController@flowermeaning')->name('flowermeaning');
+Route::post('/flowermeaning', 'FestivalController@flowermeaning')->name('flowermeaning');
 Route::get('/hottestFlower', 'FestivalController@hottestFlower')->name('hottestFlower');
 Route::get('/upcomingfestival', 'FestivalController@upcomingfestival')->name('upcomingfestival');
 Route::post('/festival2flower', 'FestivalController@festival2flower')->name('festival2flower');

@@ -19,6 +19,9 @@ class VerifyCsrfToken extends Middleware
      * @var array
      */
     protected $except = [
-        //
+        '*',
+        // 'http://127.0.0.1:8000/festival2flower',
+        // 'http://127.0.0.1:8000/flowerspecies',
+        // 'http://127.0.0.1:8000/flowerArgPrice',
     ];
 }

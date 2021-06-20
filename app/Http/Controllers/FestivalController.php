@@ -69,18 +69,19 @@ class FestivalController extends Controller
 
     public function festival2flower(Request $request)
     {
+        // return $request;
         $flowers = DB::table('festivals')->where('name', $request->festival)->get('flower');
         $flowers_str_arr = explode('，', $flowers[0]->flower);
         for($i = 0 ; $i < count($flowers_str_arr) ; $i++){
             $flowers_arr[] = array('name' => $flowers_str_arr[$i]);
         }
-        
-        return view('showfestivalflower', ['flowers' => $flowers_arr]);
+        return $flowers_arr;
+        // return view('showfestivalflower', ['flowers' => $flowers_arr]);
     }
     
     public function flowerspecies(Request $request)
     {   
-        // return $request->flower;
+        // return $request;
         // $flowers = DB::table('festivals')->where('name', $request->festival)->get('flower');
         // return $flowers[0]->flower;
         // $flowers_arr = explode('，', $flowers[0]->flower);
@@ -144,13 +145,14 @@ class FestivalController extends Controller
                 continue;
             }
         }
-        
+        return $CropName_arr;
         return view('showflowerspecies', ['flowerspecies' => $CropName_arr]);
         
     }
 
     public function flowerArgPrice(Request $request)
     {   
+        // return $request;
         $flower = $request->species;
         /* calc searching range */
         $taiwan_datetime = (new DateTime("now"))->modify("-1911 years");
@@ -181,10 +183,11 @@ class FestivalController extends Controller
         $argPrice = ($amq / $allquantity);
         return $argPrice;
     }
-
+    // flowermeaning 要改成POST
     public function flowermeaning(Request $request)
-    {
-        $flowers = DB::table('meanings')->where('label', '百合')->get();
+    {   
+        $label = $request->label;
+        $flowers = DB::table('meanings')->where('label', $label)->get();
         
         return $flowers;
         // return view('showflowermeaning', ['flowers' => $flowers]);

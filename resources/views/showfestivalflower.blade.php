@@ -9,7 +9,7 @@
 
                 <div class="card-body">
                     <form method="POST" action="{{ route('flowerspecies') }}">
-                        
+                    
 
                         <div class="col-md-6">
                                 <select id="flower" type="text" class="form-control" name="flower"  required autocomplete="type" autofocus>
