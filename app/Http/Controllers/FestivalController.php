@@ -146,7 +146,7 @@ class FestivalController extends Controller
             }
         }
         return $CropName_arr;
-        return view('showflowerspecies', ['flowerspecies' => $CropName_arr]);
+        // return view('showflowerspecies', ['flowerspecies' => $CropName_arr]);
         
     }
 
