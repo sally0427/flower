@@ -56,18 +56,15 @@ class FestivalController extends Controller
     public function upcomingfestival()
     {   
         // find upcoming festivals
-        $test = 'aaa';
         $festivals = DB::table('festivals')->get();
         foreach($festivals as $festival){
             $date_str = explode('-', $festival->date);
             if($date_str[1] == date("m")){
                 $festival_arr[] = array('name' => $festival->name);
-                print($test);
             }
         }
-        // print( $festival_arr);
-        // return $festival_arr;
-        return view('showfestivals', ['festivals' => $festival_arr]);
+        return $festival_arr;
+        // return view('showfestivals', ['festivals' => $festival_arr]);
     }
 
     public function festival2flower(Request $request)
@@ -189,8 +186,8 @@ class FestivalController extends Controller
     {
         $flowers = DB::table('meanings')->where('label', '百合')->get();
         
-    
-        return view('showflowermeaning', ['flowers' => $flowers]);
+        return $flowers;
+        // return view('showflowermeaning', ['flowers' => $flowers]);
     }
 
 
