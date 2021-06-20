@@ -9,7 +9,7 @@
 
                 <div class="card-body">
                     <form method="POST" action="{{ route('flowerspecies') }}">
-                            @csrf
+                            
                             <div class="form-group row">
 
                                 <div class="col-md-6">
