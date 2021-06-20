@@ -63,7 +63,7 @@ class FestivalController extends Controller
                 $festival_arr[] = array('name' => $festival->name);
             }
         }
-        // return $festival_arr;
+        return $festival_arr;
         return view('showfestivals', ['festivals' => $festival_arr]);
     }
 
@@ -75,7 +75,7 @@ class FestivalController extends Controller
         for($i = 0 ; $i < count($flowers_str_arr) ; $i++){
             $flowers_arr[] = array('name' => $flowers_str_arr[$i]);
         }
-        // return $flowers_arr;
+        return $flowers_arr;
         return view('showfestivalflower', ['flowers' => $flowers_arr]);
     }
     
@@ -145,7 +145,7 @@ class FestivalController extends Controller
                 continue;
             }
         }
-        // return $CropName_arr;
+        return $CropName_arr;
         return view('showflowerspecies', ['flowerspecies' => $CropName_arr]);
         
     }
@@ -187,7 +187,7 @@ class FestivalController extends Controller
     public function flowermeaning(Request $request)
     {   
         $label = $request->label;
-        $flowers = DB::table('meanings')->where('label', '百合')->get();
+        $flowers = DB::table('meanings')->where('label', $label)->get();
         
         return $flowers;
         return view('showflowermeaning', ['flowers' => $flowers]);
