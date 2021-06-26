@@ -63,8 +63,8 @@ class FestivalController extends Controller
                 $festival_arr[] = array('name' => $festival->name);
             }
         }
-        // return $festival_arr;
-        return view('showfestivals', ['festivals' => $festival_arr]);
+        return $festival_arr;
+        // return view('showfestivals', ['festivals' => $festival_arr]);
     }
 
     public function festival2flower(Request $request)
