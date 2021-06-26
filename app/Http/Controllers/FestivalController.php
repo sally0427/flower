@@ -63,17 +63,21 @@ class FestivalController extends Controller
                 $festival_arr[] = array('name' => $festival->name);
             }
         }
-        return $festival_arr;
-        // return view('showfestivals', ['festivals' => $festival_arr]);
+        // return $festival_arr;
+        return view('showfestivals', ['festivals' => $festival_arr]);
     }
 
     public function festival2flower(Request $request)
     {
         // return $request;
+        // $meaning = DB::table('festivals')->where('name', $request->festival)->get('meaning');
+        // return $meaning[0]->meaning;
         $flowers = DB::table('festivals')->where('name', $request->festival)->get('flower');
         $flowers_str_arr = explode('，', $flowers[0]->flower);
         for($i = 0 ; $i < count($flowers_str_arr) ; $i++){
-            $flowers_arr[] = array('name' => $flowers_str_arr[$i]);
+            $meaning = DB::table('festivals')->where('name', $request->festival)->get('meaning');
+            $image = DB::table('festivals')->where('name', $request->festival)->get('image');
+            $flowers_arr[] = array('name' => $flowers_str_arr[$i], 'meaning' => $meaning[0]->meaning, 'img' => $image[0]->image);
         }
         return $flowers_arr;
         // return view('showfestivalflower', ['flowers' => $flowers_arr]);
