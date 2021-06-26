@@ -191,10 +191,39 @@ class FestivalController extends Controller
     public function flowermeaning(Request $request)
     {   
         $label = $request->label;
-        $flowers = DB::table('meanings')->where('label', $label)->get();
         
-        return $flowers;
+        if(DB::table('meanings')->where([
+            ['label', '=', $label],
+            ['name', 'LIKE', '%'.$request->color.'%'],
+        ])->get() != '[]'){
+            $flowers = DB::table('meanings')->where([
+                ['label', '=', $label],
+                ['name', 'LIKE', '%'.$request->color.'%'],
+            ])->get();
+            // $request = "1";
+            // return $request;
+            return $flowers;
+        }
+        else{
+            $flowers = DB::table('meanings')->where([
+                ['label', '=', $label],
+                ['name', $label],
+            ])->get();
+            // $request = "2";
+            // return $request;
+            return $flowers;
+        }
+        
+        
         // return view('showflowermeaning', ['flowers' => $flowers]);
+    }
+
+    public function getImage(Request $request)
+    {
+        $label = $request->label;
+        $image = DB::table('meanings')->where('label', '百合')->get('image');
+
+        return $image;
     }
 
 
