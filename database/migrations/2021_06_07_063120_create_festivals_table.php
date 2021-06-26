@@ -18,6 +18,8 @@ class CreateFestivalsTable extends Migration
             $table->string('name');
             $table->date('date');
             $table->string('flower');
+            $table->string('meaning');
+            $table->string('image');
             $table->timestamps();
         });
     }
