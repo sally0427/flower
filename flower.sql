@@ -27,14 +27,14 @@ SET time_zone = "+00:00";
 -- 資料表結構 `festivals`
 --
 
-CREATE TABLE `festivals` (
-  `id` bigint(20) UNSIGNED NOT NULL,
-  `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `date` date NOT NULL,
-  `flower` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `created_at` timestamp NULL DEFAULT NULL,
-  `updated_at` timestamp NULL DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+-- CREATE TABLE `festivals` (
+--   `id` bigint(20) UNSIGNED NOT NULL,
+--   `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+--   `date` date NOT NULL,
+--   `flower` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+--   `created_at` timestamp NULL DEFAULT NULL,
+--   `updated_at` timestamp NULL DEFAULT NULL
+-- ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- 傾印資料表的資料 `festivals`
@@ -53,14 +53,14 @@ INSERT INTO `festivals` (`id`, `name`, `date`, `flower`, `created_at`, `updated_
 -- 資料表結構 `meanings`
 --
 
-CREATE TABLE `meanings` (
-  `id` bigint(20) UNSIGNED NOT NULL,
-  `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `label` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `description` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `created_at` timestamp NULL DEFAULT NULL,
-  `updated_at` timestamp NULL DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+-- CREATE TABLE `meanings` (
+--   `id` bigint(20) UNSIGNED NOT NULL,
+--   `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+--   `label` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+--   `description` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+--   `created_at` timestamp NULL DEFAULT NULL,
+--   `updated_at` timestamp NULL DEFAULT NULL
+-- ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- 傾印資料表的資料 `meanings`
@@ -204,11 +204,11 @@ CREATE TABLE `migrations` (
 -- 傾印資料表的資料 `migrations`
 --
 
-INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
-(1, '2014_10_12_000000_create_users_table', 1),
-(2, '2014_10_12_100000_create_password_resets_table', 1),
-(3, '2021_06_07_063120_create_festivals_table', 1),
-(4, '2021_06_07_063135_create_meanings_table', 1);
+-- INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
+-- (1, '2014_10_12_000000_create_users_table', 1),
+-- (2, '2014_10_12_100000_create_password_resets_table', 1),
+-- (3, '2021_06_07_063120_create_festivals_table', 1),
+-- (4, '2021_06_07_063135_create_meanings_table', 1);
 
 -- --------------------------------------------------------
 
@@ -216,11 +216,11 @@ INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
 -- 資料表結構 `password_resets`
 --
 
-CREATE TABLE `password_resets` (
-  `email` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `token` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `created_at` timestamp NULL DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+-- CREATE TABLE `password_resets` (
+--   `email` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+--   `token` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+--   `created_at` timestamp NULL DEFAULT NULL
+-- ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- --------------------------------------------------------
 
@@ -228,18 +228,18 @@ CREATE TABLE `password_resets` (
 -- 資料表結構 `users`
 --
 
-CREATE TABLE `users` (
-  `id` bigint(20) UNSIGNED NOT NULL,
-  `type` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `email` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `phone` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `email_verified_at` timestamp NULL DEFAULT NULL,
-  `password` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `remember_token` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `created_at` timestamp NULL DEFAULT NULL,
-  `updated_at` timestamp NULL DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+-- CREATE TABLE `users` (
+--   `id` bigint(20) UNSIGNED NOT NULL,
+--   `type` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+--   `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+--   `email` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+--   `phone` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+--   `email_verified_at` timestamp NULL DEFAULT NULL,
+--   `password` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+--   `remember_token` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+--   `created_at` timestamp NULL DEFAULT NULL,
+--   `updated_at` timestamp NULL DEFAULT NULL
+-- ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- 已傾印資料表的索引
@@ -254,27 +254,27 @@ ALTER TABLE `festivals`
 --
 -- 資料表索引 `meanings`
 --
-ALTER TABLE `meanings`
-  ADD PRIMARY KEY (`id`);
+-- ALTER TABLE `meanings`
+--   ADD PRIMARY KEY (`id`);
 
 --
 -- 資料表索引 `migrations`
 --
-ALTER TABLE `migrations`
-  ADD PRIMARY KEY (`id`);
+-- ALTER TABLE `migrations`
+--   ADD PRIMARY KEY (`id`);
 
 --
 -- 資料表索引 `password_resets`
 --
-ALTER TABLE `password_resets`
-  ADD KEY `password_resets_email_index` (`email`);
+-- ALTER TABLE `password_resets`
+--   ADD KEY `password_resets_email_index` (`email`);
 
 --
 -- 資料表索引 `users`
 --
-ALTER TABLE `users`
-  ADD PRIMARY KEY (`id`),
-  ADD UNIQUE KEY `users_email_unique` (`email`);
+-- ALTER TABLE `users`
+--   ADD PRIMARY KEY (`id`),
+--   ADD UNIQUE KEY `users_email_unique` (`email`);
 
 --
 -- 在傾印的資料表使用自動遞增(AUTO_INCREMENT)
@@ -283,27 +283,27 @@ ALTER TABLE `users`
 --
 -- 使用資料表自動遞增(AUTO_INCREMENT) `festivals`
 --
-ALTER TABLE `festivals`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+-- ALTER TABLE `festivals`
+--   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- 使用資料表自動遞增(AUTO_INCREMENT) `meanings`
 --
-ALTER TABLE `meanings`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=124;
+-- ALTER TABLE `meanings`
+--   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=124;
 
 --
 -- 使用資料表自動遞增(AUTO_INCREMENT) `migrations`
 --
-ALTER TABLE `migrations`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+-- ALTER TABLE `migrations`
+--   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- 使用資料表自動遞增(AUTO_INCREMENT) `users`
 --
-ALTER TABLE `users`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
-COMMIT;
+-- ALTER TABLE `users`
+--   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+-- COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
