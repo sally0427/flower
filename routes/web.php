@@ -26,7 +26,7 @@ Route::get('/upcomingfestival', 'FestivalController@upcomingfestival')->name('up
 Route::post('/festival2flower', 'FestivalController@festival2flower')->name('festival2flower');
 Route::post('/flowerspecies', 'FestivalController@flowerspecies')->name('flowerspecies');
 Route::post('/flowerArgPrice', 'FestivalController@flowerArgPrice')->name('flowerArgPrice');
-Route::post('/getImage', 'FestivalController@getImage')->name('getImage');
+Route::get('/getImage', 'FestivalController@getImage')->name('getImage');
 
 //======================================================================
 
