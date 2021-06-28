@@ -194,11 +194,11 @@ class FestivalController extends Controller
         
         if(DB::table('meanings')->where([
             ['label', '=', $label],
-            ['name', 'LIKE', '%'.$request->color.'%'],
+            ['name', '=', $request->color],
         ])->get() != '[]'){
             $flowers = DB::table('meanings')->where([
                 ['label', '=', $label],
-                ['name', 'LIKE', '%'.$request->color.'%'],
+                ['name', '=', $request->color],
             ])->get();
             // $request = "1";
             // return $request;
@@ -221,9 +221,38 @@ class FestivalController extends Controller
     public function getImage(Request $request)
     {
         $label = $request->label;
-        $image = DB::table('meanings')->where('label', '百合')->get('image');
+        $image = DB::table('meanings')->where('label', $label)->get('image');
+        // $image = DB::table('meanings')->orderBy('id', 'desc');
 
         return $image;
+    }
+
+
+    public function getImage2(Request $request)
+    {
+        $label = $request->label;
+        
+        if(DB::table('meanings')->where([
+            ['label', '=', $label],
+            ['name', '=', $request->color],
+        ])->get() != '[]'){
+            $flowers = DB::table('meanings')->where([
+                ['label', '=', $label],
+                ['name', '=', $request->color],
+            ])->get();
+            // $request = "1";
+            // return $request;
+            return $flowers;
+        }
+        else{
+            $flowers = DB::table('meanings')->where([
+                ['label', '=', $label],
+                ['name', $label],
+            ])->get();
+            // $request = "2";
+            // return $request;
+            return $flowers;
+        }
     }
 
 

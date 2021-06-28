@@ -27,7 +27,7 @@ Route::post('/festival2flower', 'FestivalController@festival2flower')->name('fes
 Route::post('/flowerspecies', 'FestivalController@flowerspecies')->name('flowerspecies');
 Route::post('/flowerArgPrice', 'FestivalController@flowerArgPrice')->name('flowerArgPrice');
 Route::get('/getImage', 'FestivalController@getImage')->name('getImage');
-
+Route::get('/getImage2', 'FestivalController@getImage2')->name('getImage2');
 //======================================================================
 
 // // store
