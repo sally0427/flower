@@ -63,7 +63,7 @@
         class="loadingImg"
       />
 
-      <van-grid :column-num="3" clickable v-else>
+      <van-grid :column-num="1" clickable v-else>
         <van-grid-item
           v-for="(item, index) in hottestFlower"
           :key="index"
@@ -267,7 +267,7 @@ export default {
   }
 }
 .flower-grid {
-  padding: 30px;
+  padding: 10px;
   padding-top: 0;
   margin-bottom: 60px;
   text-align: center;
