@@ -1,0 +1,16 @@
+.title-bar{
+    font-size: 20px;
+    border: 1px solid #dfd3d3;
+    border-top: 0px;
+    background-color: #ffffff;
+    height: 30px;
+    text-align: center;
+    height: 40px;
+    .title-item{
+      top: 25%;
+      position: relative;
+    }
+  }
+.list-card{
+  border-radius:10px;
+}

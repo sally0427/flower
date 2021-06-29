@@ -6,6 +6,7 @@ use App\Festival;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Datetime;
+header("Access-Control-Allow-Origin:*");
 class FestivalController extends Controller
 {
     /**

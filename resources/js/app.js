@@ -27,6 +27,29 @@ Vue.component('example-component', require('./components/ExampleComponent.vue').
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
+import App from './App.vue'
+import router from './router'
+import './assets/styles/global.scss'
+// 動態加載rem基準值
+import 'amfe-flexible'
+// import vant
+import Vant from 'vant'
+import 'vant/lib/index.css'
+import VueAxios from 'vue-axios'
+import axios from 'axios'
+
+// axios.defaults.baseURL = 'http://140.118.122.149:8000'
+axios.defaults.timeout = 10000
+
+Vue.use(VueAxios, axios)
+Vue.use(Vant)
+Vue.config.productionTip = false
+
+// const app = new Vue({
+//     el: '#app',
+// });
+
 const app = new Vue({
-    el: '#app',
-});
+    router,
+    render: h => h(App)
+  }).$mount('#app')
