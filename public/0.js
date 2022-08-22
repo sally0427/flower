@@ -74,6 +74,9 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
@@ -165,7 +168,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, ".banner[data-v-a1957cd2] {\n  padding: 10px;\n  background-color: #ff5c61;\n}\n.banner img[data-v-a1957cd2] {\n  width: 100%;\n  border-radius: 2px;\n}\n.van-nav-bar[data-v-a1957cd2]  .van-icon {\n  color: #ff5c61;\n}\n.van-nav-bar[data-v-a1957cd2]  .van-nav-bar__text {\n  color: #ff5c61;\n}\n.van-nav-bar[data-v-a1957cd2]  .van-ellipsis {\n  color: #202020;\n  opacity: 0.7;\n}\n.festival-meaning[data-v-a1957cd2] {\n  padding: 0px 20px;\n}\n.festival-meaning p[data-v-a1957cd2] {\n  font-size: 12px;\n  color: #202020;\n  opacity: 0.7;\n}\n.flower-grid[data-v-a1957cd2] {\n  text-align: center;\n}", ""]);
+exports.push([module.i, ".banner[data-v-a1957cd2] {\n  padding: 10px;\n  background-color: #ff5c61;\n}\n.banner img[data-v-a1957cd2] {\n  width: 100%;\n  border-radius: 2px;\n}\n.van-nav-bar[data-v-a1957cd2]  .van-icon {\n  color: #ff5c61;\n}\n.van-nav-bar[data-v-a1957cd2]  .van-nav-bar__text {\n  color: #ff5c61;\n}\n.van-nav-bar[data-v-a1957cd2]  .van-ellipsis {\n  color: #202020;\n  opacity: 0.7;\n}\n.festival-meaning[data-v-a1957cd2] {\n  padding: 0px 20px;\n}\n.festival-meaning p[data-v-a1957cd2] {\n  font-size: 12px;\n  color: #202020;\n  opacity: 0.7;\n}\n.flower-grid[data-v-a1957cd2] {\n  text-align: center;\n  padding: 30px;\n  padding-top: 0;\n  margin-bottom: 60px;\n  text-align: center;\n}\n.flower-grid .grid-img[data-v-a1957cd2] {\n  width: 60px;\n  height: 60px;\n}\n.flower-grid p[data-v-a1957cd2] {\n  font-size: 14px;\n  margin-top: 15px;\n  color: #646566;\n}", ""]);
 
 // exports
 
@@ -310,14 +313,26 @@ var render = function() {
                 "van-grid",
                 { attrs: { "column-num": 3, clickable: "" } },
                 _vm._l(_vm.flower_species, function(item) {
-                  return _c("van-grid-item", {
-                    key: item.name,
-                    attrs: {
-                      icon: item.img,
-                      text: item.name,
-                      to: { path: "/category", query: { label: item.name } }
-                    }
-                  })
+                  return _c(
+                    "van-grid-item",
+                    {
+                      key: item.name,
+                      attrs: {
+                        icon: item.img,
+                        text: item.name,
+                        to: { path: "/category", query: { label: item.name } }
+                      }
+                    },
+                    [
+                      _c("van-image", {
+                        staticClass: "grid-img",
+                        attrs: { src: item.img, rel: "external nofollow" }
+                      }),
+                      _vm._v(" "),
+                      _c("p", [_vm._v(_vm._s(item.name))])
+                    ],
+                    1
+                  )
                 }),
                 1
               )

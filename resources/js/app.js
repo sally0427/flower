@@ -38,7 +38,7 @@ import 'vant/lib/index.css'
 import VueAxios from 'vue-axios'
 import axios from 'axios'
 
-// axios.defaults.baseURL = 'http://140.118.122.149:8000'
+// axios.defaults.baseURL = 'http://140.118.122.153:8000'
 axios.defaults.timeout = 10000
 
 Vue.use(VueAxios, axios)

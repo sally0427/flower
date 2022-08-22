@@ -3495,6 +3495,9 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
 // @ is an alias to /src
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'Home',
@@ -8046,7 +8049,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "@charset \"UTF-8\";\n.van-swiper img[data-v-63cd6604] {\n  height: 150px;\n  width: 100%;\n}\n.search-field[data-v-63cd6604] {\n  background-color: red;\n}\n.nav-title[data-v-63cd6604] {\n  background-color: #ff5c61;\n  padding: 10px 100px;\n}\n.nav-title p[data-v-63cd6604] {\n  text-align: center;\n  font-size: 20px;\n  font-weight: normal;\n  color: white;\n  padding: 10px 20px;\n  position: relative;\n}\n.nav-title p[data-v-63cd6604]::after {\n  content: \"\";\n  position: absolute;\n  height: 2px;\n  background: white;\n  top: 100%;\n  width: 20%;\n  left: 50%;\n  transform: translateX(-50%);\n}\n.swiper .van-swipe-item[data-v-63cd6604] {\n  color: #fff;\n  font-size: 20px;\n  text-align: center;\n}\n.nav-sub-title p[data-v-63cd6604] {\n  text-align: center;\n  font-size: 14px;\n  font-weight: normal;\n  opacity: 0.7;\n  color: #202020;\n  padding: 20px 30px;\n  position: relative;\n  background-color: #fff;\n  z-index: 333;\n}\n.nav-sub-title p span[data-v-63cd6604] {\n  background-color: #fff;\n  padding: 0 4px;\n}\n.nav-sub-title p[data-v-63cd6604]::after {\n  content: \"\";\n  position: absolute;\n  height: 2px;\n  background: #202020;\n  opacity: 0.7;\n  top: 50%;\n  width: 25%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n  pointer-events: none;\n  z-index: -999;\n}\n.scroll-box[data-v-63cd6604] {\n  overflow: hidden;\n}\n.scroll-box .box-wrapper[data-v-63cd6604] {\n  padding: 10px 0;\n  white-space: nowrap;\n  /*文本不会换行，文本会在在同一行上继续*/\n  overflow-y: auto;\n  /*可滑动*/\n  height: 100%;\n  background-color: #fff;\n}\n.scroll-box .box[data-v-63cd6604] {\n  width: 30%;\n  margin-left: 3%;\n  height: 150px;\n  background: #fbe9ed;\n  border-radius: 3px;\n  box-shadow: rgba(0, 0, 0, 0.1) 2px 2px 3px;\n  display: inline-block;\n  /*行内块元素*/\n  position: relative;\n}\n.scroll-box .box p[data-v-63cd6604] {\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n  color: #f7c6d1;\n  -ms-writing-mode: tb-rl;\n      writing-mode: vertical-rl;\n}\n.flower-grid[data-v-63cd6604] {\n  padding: 10px;\n  padding-top: 0;\n  margin-bottom: 60px;\n  text-align: center;\n}\n.loadingImg[data-v-63cd6604] {\n  width: 100px;\n  height: 100px;\n}\n.scroll-box[data-v-63cd6604] {\n  text-align: center;\n}\n.stores-around[data-v-63cd6604] {\n  padding: 20px;\n}\n.stores-around .van-button__text[data-v-63cd6604] {\n  color: #5d6065;\n}", ""]);
+exports.push([module.i, "@charset \"UTF-8\";\n.van-swiper img[data-v-63cd6604] {\n  height: 150px;\n  width: 100%;\n}\n.search-field[data-v-63cd6604] {\n  background-color: red;\n}\n.nav-title[data-v-63cd6604] {\n  background-color: #ff5c61;\n  padding: 10px 100px;\n}\n.nav-title p[data-v-63cd6604] {\n  text-align: center;\n  font-size: 20px;\n  font-weight: normal;\n  color: white;\n  padding: 10px 20px;\n  position: relative;\n}\n.nav-title p[data-v-63cd6604]::after {\n  content: \"\";\n  position: absolute;\n  height: 2px;\n  background: white;\n  top: 100%;\n  width: 20%;\n  left: 50%;\n  transform: translateX(-50%);\n}\n.swiper .van-swipe-item[data-v-63cd6604] {\n  color: #fff;\n  font-size: 20px;\n  text-align: center;\n}\n.nav-sub-title p[data-v-63cd6604] {\n  text-align: center;\n  font-size: 14px;\n  font-weight: normal;\n  opacity: 0.7;\n  color: #202020;\n  padding: 20px 30px;\n  position: relative;\n  background-color: #fff;\n  z-index: 333;\n}\n.nav-sub-title p span[data-v-63cd6604] {\n  background-color: #fff;\n  padding: 0 4px;\n}\n.nav-sub-title p[data-v-63cd6604]::after {\n  content: \"\";\n  position: absolute;\n  height: 2px;\n  background: #202020;\n  opacity: 0.7;\n  top: 50%;\n  width: 25%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n  pointer-events: none;\n  z-index: -999;\n}\n.scroll-box[data-v-63cd6604] {\n  overflow: hidden;\n}\n.scroll-box .box-wrapper[data-v-63cd6604] {\n  padding: 10px 0;\n  white-space: nowrap;\n  /*文本不会换行，文本会在在同一行上继续*/\n  overflow-y: auto;\n  /*可滑动*/\n  height: 100%;\n  background-color: #fff;\n}\n.scroll-box .box[data-v-63cd6604] {\n  width: 30%;\n  margin-left: 3%;\n  height: 150px;\n  background: #fbe9ed;\n  border-radius: 3px;\n  box-shadow: rgba(0, 0, 0, 0.1) 2px 2px 3px;\n  display: inline-block;\n  /*行内块元素*/\n  position: relative;\n}\n.scroll-box .box p[data-v-63cd6604] {\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n  color: #f7c6d1;\n  -ms-writing-mode: tb-rl;\n      writing-mode: vertical-rl;\n}\n.flower-grid[data-v-63cd6604] {\n  padding: 30px;\n  padding-top: 0;\n  margin-bottom: 60px;\n  text-align: center;\n}\n.flower-grid .grid-img[data-v-63cd6604] {\n  width: 60px;\n  height: 60px;\n}\n.flower-grid p[data-v-63cd6604] {\n  font-size: 14px;\n  margin-top: 15px;\n  color: #646566;\n}\n.loadingImg[data-v-63cd6604] {\n  width: 100px;\n  height: 100px;\n}\n.scroll-box[data-v-63cd6604] {\n  text-align: center;\n}\n.stores-around[data-v-63cd6604] {\n  padding: 20px;\n}\n.stores-around .van-button__text[data-v-63cd6604] {\n  color: #5d6065;\n}", ""]);
 
 // exports
 
@@ -63561,16 +63564,28 @@ var render = function() {
             })
           : _c(
               "van-grid",
-              { attrs: { "column-num": 1, clickable: "" } },
+              { attrs: { "column-num": 3, clickable: "" } },
               _vm._l(_vm.hottestFlower, function(item, index) {
-                return _c("van-grid-item", {
-                  key: index,
-                  attrs: {
-                    icon: item.img,
-                    text: item.name,
-                    to: { path: "/category", query: { label: item.name } }
-                  }
-                })
+                return _c(
+                  "van-grid-item",
+                  {
+                    key: index,
+                    attrs: {
+                      icon: item.img,
+                      text: item.name,
+                      to: { path: "/category", query: { label: item.name } }
+                    }
+                  },
+                  [
+                    _c("van-image", {
+                      staticClass: "grid-img",
+                      attrs: { src: item.img, rel: "external nofollow" }
+                    }),
+                    _vm._v(" "),
+                    _c("p", [_vm._v(_vm._s(item.name))])
+                  ],
+                  1
+                )
               }),
               1
             )
